@@ -1,0 +1,363 @@
+﻿html
+{
+	overflow-y:hidden; 
+}
+
+body 
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #000000;
+	color: #ffffff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:2.80em;	
+	background-image:url(./images/bottomBorder.gif);
+	background-position:bottom left;
+	background-repeat:repeat-x;
+	
+}
+
+span.cancelled {
+    color: red;
+}
+
+div.heading
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+    height: 4vh;
+	text-align: center;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	color: Black;
+	z-index: 2;
+}
+
+div.heading table
+{
+	width: 100%;
+	border-collapse: collapse;
+	table-layout:fixed;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+div.heading table tr {
+	height: 4vh;
+}
+
+div.heading table td.col1
+{
+    width: 158px;
+}
+
+div.heading table td.col2
+{
+    text-align: center;
+}
+
+div.heading table td.col3
+{
+    width: 280px;
+}
+
+div.contents
+{
+	position: absolute;
+	top: 4vh;
+	left: 0px;
+	width: 100%;
+	height: 90vh;
+	padding-top:10px;
+	overflow: hidden;
+}
+
+div.last_updated {
+	text-align: right;
+	padding-bottom: 0.1em;
+}
+
+
+div.NRESpaceContainer {
+	position: absolute;
+	top: 91vh;
+	height: 8vh;
+}
+
+div.NRESpaceContainer div.NRESpaceHeader {
+	position: relative;
+	height: 1vh;
+	color: yellow;
+}
+
+div.NRESpaceContainer div.nre_space
+{
+	position: relative;
+	top: 1vh;
+	height: 7vh;
+	padding-top: 10px;
+	margin-left: 0px;
+	overflow: hidden;
+	font-size: 1.2em;
+	text-align: left;
+	color: yellow;
+}
+
+div.nre_space div.message
+{
+	color: red;
+}
+
+table.depboard
+{
+	font-family: Arial;
+	font-size: 1.5m;
+	width: 100%;
+	border-collapse: collapse;
+	table-layout:fixed;
+}
+
+table.depboard th
+{
+	border-collapse: collapse;
+	color:#FFFF00;
+	margin:0px;
+	padding:5px 0 5px 0;
+	border:0px solid #FF0000;
+	border-bottom: solid 2px #ffffff;
+	text-align:left;
+}
+
+table.depboard th.centre_col
+{
+	background-image:url(./images/sep.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding:0px 0px 0px 10px;
+	margin:0px;
+}
+table.depboard td  {
+	font-size:32pt;
+	border-bottom: solid 1px #FFFFFF;
+	text-align: left;
+}
+table.depboard th.plat_col
+{
+	width:120px;
+}
+
+table.depboard th.sched_col
+{
+	width:230px;
+}
+
+table.depboard th.exp_col
+{
+	width:360px;
+	text-align:left;
+}
+
+table.depboard td.left_col
+{
+	text-align: left;
+	padding-left:15px;
+}
+
+
+table.depboard th.left_col
+{
+	text-align: left;
+/*	width: 1%; */
+	padding: 6px 10px;
+}
+
+table.depboard td.no_border
+{
+	border-bottom: none;
+	font-size: 48pt;/*1.35em;*/
+}
+
+table.depboard span.future
+{
+	color: Yellow;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+table.depboard th.no_border
+{
+	border-bottom: none;
+}
+
+table.depboard tr
+{
+	height: 3vh;
+}
+
+table.depboard tr#depboardHeader {
+	height: 1vh;
+}
+
+table.depboard tr.altrow
+{
+	background-color: #121d34;
+}
+table.depboard td.cancelled
+{	   
+	font-size: important;
+	color: #FF0000;
+}
+
+table.depboard td.on_time
+{	  
+	font-size:26pt !important;/*1.10em*/ 
+}
+table.depboard td.no_report
+{		  
+	font-size:26pt !important;/*1.10em*/ 
+}
+table.depboard td.forecast_late
+{
+	color:Red;
+}
+table.depboard td.forecast
+{
+}
+table.depboard td.actual_late
+{
+	color:Red;
+}
+table.depboard td.actual
+{
+}
+table.depboard td.starts_here
+{
+}
+
+table.depboard td.late_time
+{
+	color: #FF0000;
+}
+
+table.depboard td.calling_list
+{
+	color: Yellow;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+table.depboard td.calling_list span.form_header
+{
+	color: #FFFFFF;
+}
+
+table.depboard td.calling_list span.cp_header
+{
+	color: #FFFFFF;
+}
+
+table.depboard td.calling_list span.cp_dest
+{
+	color: #FFFFFF;
+}
+
+table.depboard td.calling_list span.LastReportLabel
+{
+    color:#FFFFFF;   
+}
+
+table.depboard td.calling_list span.LastReportStationArrived
+{
+    color:#FFFFFF;   
+}
+
+table.depboard td.calling_list span.cancelled
+{
+	color: #FF0000;
+}
+
+table.depboard span.via_text
+{
+	font-size: 18pt;
+	color: Silver;
+}
+
+table.depboard span.circular_text
+{
+	font-size: 18pt;
+	color: Silver;
+}
+
+table.depboard span.request_text
+{
+	font-size: 18pt;
+	color: Silver;
+}
+
+table.depboard div.scrollable
+{
+	height: 3vh;
+	margin-bottom: 2px;
+	overflow: hidden;
+}
+
+table.depboard td.calling_list span.late_reason
+{
+	color: #FF0000;
+}
+
+table.depboard td.calling_list div.canc_reason
+{
+	color: #FF0000;
+	background-image:url(./images/imp_icon.svg);
+	background-position:0.1vh 0.1vh;
+	background-repeat:no-repeat;
+	font-size: 0.9em;
+	height: 1vh;
+	padding:0vh 0vh 0.1vh 1vh;	
+}
+
+table.depboard td.calling_list span.not_calling_list
+{
+	color: #FF0000;
+}
+
+span.cp_link
+{
+	color: #FF0000;
+}
+
+div.disruptionContainer
+{
+	position:relative;
+	width:600px;
+	margin:100px auto auto auto;
+	padding:30px;
+	font-size: 14pt;
+	font-weight: bold;
+	background-color: White;
+	color: Black;
+	border:13px solid #003399;
+}
+
+div.errorContainer
+{
+	position:relative;
+	width:600px;
+	margin:100px auto auto auto;
+	padding:30px;
+	font-size: 14pt;
+	font-weight: bold;
+	background-color: White;
+	color: Black;
+	border:13px solid Red;
+}
+
+img.imgDisruptionIcon
+{
+	background: url('./images/imp_icon.gif') no-repeat 0 20px;
+	margin-left:7px;
+}
