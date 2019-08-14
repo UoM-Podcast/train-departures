@@ -164,7 +164,7 @@ HTML;
 
     </div>
     <div class="NRESpaceContainer">
-        <div class="NRESpaceHeader">Messages:</div>
+        <div class="NRESpaceHeader">Service updates:</div>
 <?php
     if (isset($board->nrccMessages)) {
         $m = 0;
