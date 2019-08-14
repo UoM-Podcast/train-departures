@@ -179,7 +179,7 @@ HTML;
         
         foreach($messages as $message) {
             $message_text = $message->_;
-            $cut = strpos($message_text, "More details");
+            $cut = strpos($message_text, " More ");
             if ($cut > 0) {
                 $message_text = substr($message_text, 0, $cut);
             }
